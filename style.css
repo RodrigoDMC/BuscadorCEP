@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background-image: url('plp-01.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Recursive', sans-serif;
+    color: white;
+}
+
+img {
+    background-size: contain;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: 10px;
+    top: 5em;
+    left: 5em;
+}
+
+
+#dentro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 350px;
+    flex-wrap: wrap;
+    background-color: #003768;   
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+#dentro h1 {
+    padding-top: 20px;
+    font-weight: 800;
+    text-shadow: 1px 1px 10px #ffd400;
+}
+#busca p {
+    font-weight: 700;
+    text-shadow: 1px 1px 10px #ffd400;
+}
+#busca button {
+    margin: 1.5em;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient( #ffd400, black);
+}
+#busca button:hover {
+    transition: 0.5s;
+    background-image: linear-gradient(black, #ffd400);
+}
+#cep {
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #ffd400;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 700;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+
+@media (max-width: 535px) {
+    main {
+        position: static;
+        margin-top: 100px;
+    }
+    
+}
